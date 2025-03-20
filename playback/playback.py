@@ -1,7 +1,6 @@
 def main():
-    user_input = input("Enter the messages you want to say: ")
+    user_input = input("Enter the messages you want to say: ").replace("...")
 
-
-    print(f"{user_input} z:,")
+    print(f"playspeed: {user_input})
 
 main()
