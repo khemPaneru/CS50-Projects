@@ -1,6 +1,6 @@
 
-def convert(user_input):
-   khem =input_in_string.replace(":) " ,"🙂").replace(":( " ,"🙁")
+def convert(string_input):
+   khem = string_input.replace(":) " ,"🙂").replace(":( " ,"🙁")
     return khem
 
 def main():
