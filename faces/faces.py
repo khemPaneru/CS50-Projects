@@ -7,9 +7,9 @@ def convert(string_input):
     return khem
 
 def main():
-    user_input= input("Give your input in emoticons")
+    user_input= input("Give your input in emoticons : ")
     #call the function with arug
-    
+
     result = convert(user_input)
     print(result)
 
