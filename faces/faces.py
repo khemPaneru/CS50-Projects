@@ -6,7 +6,8 @@ def convert:
 
 
 
-def function:
+def main:
    user_input= input("Give your input in emoticons")
-    out
-    print(khem)
+    result = convert(user_input)
+    print(result)
+
