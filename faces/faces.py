@@ -1,6 +1,6 @@
 
 def convert:
-    input_in_string = 
+   khem =input_in_string.replace(":) "," ").replace(" ","")
 
 
 
