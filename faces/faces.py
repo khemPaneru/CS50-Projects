@@ -1,2 +1,3 @@
 def function:
-    input 
+    user_input= str(input("Give your input")
+)
