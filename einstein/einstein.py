@@ -1,15 +1,21 @@
 
-def calculate(m):
+# m= mass in kg
 
-    c = 47477
-    E(energy) = m * (c ** 2)
+def calculate(m):
+    # c = speed of light in m/s
+
+    c = 300000000
+    # E = Energy
+    E = m * (c ** 2)
     return E
 
-    user_mass = int(input("Enter the mass in kg :)"
 
 def main():
-    m =int(input("Enter mass in kg:" ))
+    m =int(input("Enter mass in kg: " ))
+    # "calculate" fun is called
     result = calculate(m)
-    print(result)
+    print( f"The converted energy {result} in joules")
+
 main()
+
 
