@@ -5,7 +5,7 @@ def main():
     print(f"Leave ${tips:.2f}")
 
 
-# use string method 
+# use string method
 def dollars_to_float(d):
     return float(d.strip('$'))
 
