@@ -7,7 +7,7 @@ def main():
     print(f"Leave ${tips:.2f}")
 
 
-# use string method to remove leading(before string) like $50 ,where $ will be removed !
+# use string method(like  strip ) to remove leading(before string) like $50 ,where $ will be removed !
 def dollars_to_float(d):
     return float(d.strip('$'))
 
