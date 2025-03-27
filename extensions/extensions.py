@@ -12,6 +12,7 @@ def main():
     }
 for media in media_types:
     if user_name.endswitch(media):
-        return media_types[media]
+         return media_types[media]
+
 result = main()
 print(main)
