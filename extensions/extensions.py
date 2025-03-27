@@ -14,6 +14,7 @@ def main():
         ".zip": "application/zip",
     }
     for media in media_types:
+        
         if user_input.endswith(media):
             return media_types[media]
 
