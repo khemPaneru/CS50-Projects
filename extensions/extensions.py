@@ -1,4 +1,5 @@
 def main():
+
     user_input = input("Enter file name: ").lower()
 
     media_types = {
@@ -11,8 +12,10 @@ def main():
         ".zip": "application/zip",
     }
     for media in media_types:
-        if user_name.endswith(media):
+        if user_input.endswith(media):
             return media_types[media]
+
+    return application/octet-stream
 
 
 
