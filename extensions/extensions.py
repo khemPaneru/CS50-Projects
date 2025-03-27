@@ -1,6 +1,6 @@
 def main():
 
-    user_input = input("Enter file name: ").lower()
+    user_input = input("Enter File name: ").lower()
     #create a dic
     media_types = {
         ".gif": "image/gif",
