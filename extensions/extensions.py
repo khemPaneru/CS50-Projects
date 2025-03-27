@@ -15,9 +15,9 @@ def main():
         if user_input.endswith(media):
             return media_types[media]
 
-    return application/octet-stream
+    return "application/octet-stream"
 
 
 
 result = main()
-print(main)
+print(result)
