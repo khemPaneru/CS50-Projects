@@ -17,7 +17,7 @@ def main():
 # with a specified suffix (or substrings) like .gif,.jpg
         if user_input.endswith(media):
             return media_types[media]
-        
+
     return "application/octet-stream"
 
 print(main())
