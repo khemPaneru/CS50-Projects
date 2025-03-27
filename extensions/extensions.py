@@ -10,9 +10,12 @@ def main():
         ".txt": "text/plain",
         ".zip": "application/zip",
     }
-for media in media_types:
-    if user_name.endswitch(media):
-         return media_types[media]
+    for media in media_types:
+        if user_name.endswith(media):
+            return media_types[media]
+
+
+
 
 result = main()
 print(main)
