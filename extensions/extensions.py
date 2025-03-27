@@ -17,6 +17,4 @@ def main():
 
     return "application/octet-stream"
 
-
-
-main()
+print(main())
