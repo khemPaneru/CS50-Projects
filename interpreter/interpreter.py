@@ -1,6 +1,8 @@
 
 
 expression = input("Expression: ")
+#split(" ") method  is used to separate the user
+#  input string into three parts
 
 x, y, z = expression.split(" ")
 
