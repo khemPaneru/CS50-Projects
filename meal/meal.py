@@ -8,4 +8,11 @@ def convert(time):
     hours = int(hours)
     minutes = int(minutes)
     return hours + (minutes / 60)
-if 07:00 <= time
+
+if 07:00 <= time <= 08:00:
+    print("brekfast)"
+elif 13:00 time <= 14:00:
+    print("lunch")
+elif 19:00 time <= 20:00:
+    print("Dinner")
+main
