@@ -4,6 +4,7 @@ def main():
 
     time_in_hour = convert(time)
 
+
     if 7.00 <= time_in_hour <= 8.00:
         print("brekfast")
     elif 12.00 <= time_in_hour <= 13.00:
@@ -20,7 +21,7 @@ def convert(clock):
 
     return hours + (minutes / 60)
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
 
     main()
