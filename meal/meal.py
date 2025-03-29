@@ -1,1 +1,5 @@
-user_input = input("What time is it :?)
+def main():
+
+time= input("What time is it :?)"
+
+hours, minutes = time.split(":")
