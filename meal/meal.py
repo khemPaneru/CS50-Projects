@@ -3,6 +3,8 @@ def main():
 time= input("What time is it(HH:MM) :?)"
 
 def convert(time):
-hours, minutes = time.split(":")
+    hours, minutes = time.split(":")
 
-hours = time
+    hours = int(hours)
+    minutes = int(minutes)
+    return hours + (minutes / 60)
