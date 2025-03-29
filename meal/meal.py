@@ -2,7 +2,8 @@ def main():
 
     time= input("What time is it(HH:MM) :?")
 
-    convert(time)
+    time_in_hour = convert(time)
+
     if 7:00 <= time <= 8:00:
         print("brekfast)"
     elif 13:00 time <= 14:00:
