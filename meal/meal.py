@@ -1,8 +1,6 @@
 def main():
 
-time= input("What time is it :?)"
-
-hours, minutes = time.split(":")
+time= input("What time is it(HH:MM) :?)"
 
 def convert(time):
-if time == 
+hours, minutes = time.split(":")
