@@ -4,11 +4,11 @@ def main():
 
     time_in_hour = convert(time)
 
-    if 7.00 <= time_in_hour <= 8:00:
+    if 7.00 <= time_in_hour <= 8.00:
         print("brekfast")
-    elif 13:00 <= time_in_hour <= 14:00:
+    elif 13.00 <= time_in_hour <= 14.00:
         print("lunch")
-    elif 19:00 <= time_in_hour <= 20:00:
+    elif 19.00 <= time_in_hour <= 20.0:
         print("Dinner")
     else:
         print("No meal time")
