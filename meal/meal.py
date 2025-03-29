@@ -8,3 +8,4 @@ def convert(time):
     hours = int(hours)
     minutes = int(minutes)
     return hours + (minutes / 60)
+if 07:00 <= time
