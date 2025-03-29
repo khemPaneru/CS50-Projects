@@ -10,6 +10,8 @@ def main():
         print("lunch")
     elif 19:00 time <= 20:00:
         print("Dinner")
+    else:
+        print("No meal time")
 
 def convert(clock):
     hours, minutes = time.split(":")
