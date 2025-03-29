@@ -5,11 +5,11 @@ def main():
     time_in_hour = convert(time)
 
     if 7.00 <= time_in_hour <= 8.00:
-        print("brekfast")
+        print("breakfast time")
     elif 12.00 <= time_in_hour <= 13.00:
-        print("lunch")
+        print("lunch time")
     elif 18.00 <= time_in_hour <= 19.0:
-        print("Dinner")
+        print("Dinner time")
 
 def convert(clock):
     hours, minutes = clock.split(":")
