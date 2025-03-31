@@ -11,7 +11,7 @@ def main():
         if coin in [25,10,5]:
             inserted_coin += coin
         else:
-            print("invalid")
+            print("amount_due")
 
     change_owe = inserted_oin - total_amount
 
