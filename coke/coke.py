@@ -13,7 +13,7 @@ def main():
         else:
             print("amount_due")
 
-    change_owe = inserted_oin - total_amount
+    change_owe = inserted_coin - total_amount
 
     if change_owe > 0:
         print("Change Owed:{change_owe} cents")
