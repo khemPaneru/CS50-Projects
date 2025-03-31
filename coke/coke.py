@@ -6,18 +6,16 @@ def main():
     while inserted_coin < total_amount:
         amount_due = total_amount - inserted_coin
 
-        coin = int(input(f"Amount due :{amount_due} cents \nInsert coin"))
-
-
+        coin = int(input(f"Amount due :{amount_due} cents \nInsert coin: "))
 
         if coin in [25,10,5]:
             inserted_coin += coin
         else:
             print("invalid")
 
-    change_owe = inserted_coin - total_amount
+    change_owe = inserted_oin - total_amount
 
     if change_owe > 0:
-        print("Change owe:{change_owe} cents")
+        print("Change owed:{change_owe} cents")
 
 main()
