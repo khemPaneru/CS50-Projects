@@ -5,7 +5,8 @@ inserted_coin = 0
 while inserted_coin < total_amount:
     amount_due = total_amount - inserted_coin
 
-    coin = int(input(f"Amount due :{amount_due}. Insert coin"))
+    coin = int(input(f"Amount due :{amount_due}"))
+    print("Insert Coin")
 
 
     if coin in [25,10,4]:
