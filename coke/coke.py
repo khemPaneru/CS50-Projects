@@ -15,7 +15,7 @@ def main():
 
     change_owe = inserted_coin - total_amount
 
-    if change_owe > 0:
-        print("Change Owed:{change_owe} cents")
+    if change_owe >= 0:
+        print(f"Change Owed: {change_owe} ")
 
 main()
