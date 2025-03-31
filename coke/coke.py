@@ -10,7 +10,7 @@ def main():
 
 
 
-        if coin in [25,10,4]:
+        if coin in [25,10,5]:
             inserted_coin += coin
         else:
             print("invalid")
