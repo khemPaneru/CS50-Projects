@@ -16,6 +16,6 @@ def main():
     change_owe = inserted_oin - total_amount
 
     if change_owe > 0:
-        print("Change owed:{change_owe} cents")
+        print("Change Owed:{change_owe} cents")
 
 main()
