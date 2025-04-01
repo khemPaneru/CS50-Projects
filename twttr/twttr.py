@@ -9,4 +9,4 @@ for char in user_input:
         #It's an argument or parameter passed to the print() function used to
         #  peint in same line without introducing
         #  new line for printing as python does by default
-        print('Output:',char, end="")
+        print('Output:', char, end="")
