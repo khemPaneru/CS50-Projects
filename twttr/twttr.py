@@ -5,6 +5,6 @@ vowel = "aeiouAEIOU"
 result = ""
 
 for char in user_input:
-    if char != vowel:
+    if char not in  vowel:
         result += char
 print(f"{result}")
