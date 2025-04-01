@@ -2,8 +2,9 @@
 user_input = input("Input")
 
 vowel = {a,e,i,o,u}
-result = 
+result =""
 
 for char in user_input
     if char !== vowel:
-        re
+        result += char
+print(f{result})
