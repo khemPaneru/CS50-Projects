@@ -1,35 +1,35 @@
 def main():
 
 
-plate = input("input")
+    plate = input("input")
 
- if is_valid(plate):
-    print("Valid")
-else:
-    print("Invalid")
+    if is_valid(plate):
+        print("Valid")
+    else:
+        print("Invalid")
 
-def is_valid(khem)
-if not (2< lens(khem) >= 6):
-    return false
-
-if not khem[:2]   #or khem[0:2]
-    return false
-
-for i in range(len(khem)):
-   if khem[i].isdigit():
-        if khem[i] == 0:
+    def is_valid(khem):
+        if not (2< lens(khem) >= 6):
             return false
-        if not khem[i].isdidgit():
+
+        if not khem[:2]:  #or khem[0:2]
             return false
-        break
 
-   return True
+        for i in range(len(khem)):
+            if khem[i].isdigit():
+                if khem[i] == 0:
+                    return false
+                if not khem[i].isdidgit():
+                    return false
+                break
 
-  # Check if all characters are alphanumericEnsures
-#  no spaces, punctuation, or special characters
+        return True
 
-if not khem.isalnum():
-    return false
+    # Check if all characters are alphanumericEnsures
+    #  no spaces, punctuation, or special characters
+
+    if not khem.isalnum():
+        return false
 
 
 
