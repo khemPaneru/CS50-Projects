@@ -1,6 +1,6 @@
 def main():
 
-    plate = input("input")
+     = input("input")
 
     if is_valid(plate):
         print("Valid")
@@ -14,7 +14,7 @@ def is_valid(khem):
             return False
 
 # # Check if first two characters are letters
-        if not khem[:2].isalpha()  #or khem[0:2]
+        if not khem[:2].isalpha():  #or khem[0:2]
             return False
 
         for i in range(len(khem)):
