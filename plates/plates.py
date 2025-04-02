@@ -19,7 +19,7 @@ def is_valid(khem):
 
 # Check if all characters are alphanumeric or not
         if not khem.isalnum():
-            return false
+            return False
 
         for i in range(len(khem)):
             if khem[i].isdigit():
