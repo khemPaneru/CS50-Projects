@@ -8,9 +8,8 @@ plate = input("input").upper
 else:
     print("Invalid")
 
-def is_valid(s)
-
-
+def is_valid(khem)
+khem = 
 
 
 main()
