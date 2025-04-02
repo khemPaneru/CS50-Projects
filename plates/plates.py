@@ -9,13 +9,17 @@ def main():
 
 
 def is_valid(khem):
-         # Check length constraint (between 2 and 6 characters)
+# Check length constraint (between 2 and 6 characters)
         if not (2< len(khem) >= 6):
             return False
 
-# # Check if first two characters are letters
+## Check if first two characters are letters
         if not khem[:2].isalpha():  #or khem[0:2]
             return False
+
+# Check if all characters are alphanumeric or not
+        if not khem.isalnum():
+            return false
 
         for i in range(len(khem)):
             if khem[i].isdigit():
@@ -27,8 +31,6 @@ def is_valid(khem):
 
         return True
 
-    # Check if all characters are alphanumeric or not
-        if not khem.isalnum():
-            return false
+
 
 main()
