@@ -27,8 +27,8 @@ def is_valid(khem):
 
         return True
 
-    # Check if all characters are alphanumeric by Ensuring
-    #  no spaces, punctuation, or special characters
+    # Check if all characters are alphanumeric(no spaces, punctuation, or special characters)
+
 
         if not khem.isalnum():
             return false
