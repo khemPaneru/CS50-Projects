@@ -8,19 +8,19 @@ def main():
     else:
         print("Invalid")
 
-    def is_valid(khem):
-        if not (2< lens(khem) >= 6):
-            return false
+def is_valid(khem):
+        if not (2< len(khem) >= 6):
+            return False
 
         if not khem[:2]:  #or khem[0:2]
-            return false
+            return False
 
         for i in range(len(khem)):
             if khem[i].isdigit():
                 if khem[i] == 0:
-                    return false
+                    return False
                 if not khem[i].isdidgit():
-                    return false
+                    return False
                 break
 
         return True
@@ -28,8 +28,8 @@ def main():
     # Check if all characters are alphanumericEnsures
     #  no spaces, punctuation, or special characters
 
-    if not khem.isalnum():
-        return false
+        if not khem.isalnum():
+            return false
 
 
 
