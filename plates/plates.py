@@ -20,6 +20,10 @@ for i in range(lens(khem)):
             return false
         if not khem[i].isdidgits():
             return false
-        
+    break
+
+         # Check if all characters are alphanumeric
+    if not s.isalnum():  # Ensures no spaces, punctuation, or special characters
+        return False
 
 main()
