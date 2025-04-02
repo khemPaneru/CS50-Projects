@@ -21,15 +21,18 @@ def is_valid(khem):
         if not khem.isalnum():
             return False
 
+         # Check if numbers are at the end and do not start with '0'
         for i in range(len(khem)):
             if khem[i].isdigit():
-                if khem[i] == "0":
+                if khem[i] == "0":  # First number cannot be '0'
                     return False
-                if not khem[i].isdigit():
+                # Ensure all characters after the first number are digits
+                if not khem[i:].isdigit():
                     return False
-                break
+                break  # Stop checking after the first digit is found
 
         return True
+
 
 
 
