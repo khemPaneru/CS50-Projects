@@ -1,7 +1,7 @@
 def main():
 
 
-plate = input("input").upper
+plate = input("input")
 
  if is_valid(plate):
     print("Valid")
