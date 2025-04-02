@@ -13,7 +13,7 @@ def is_valid(khem):
         if not (2< len(khem) >= 6):
             return False
 
-        
+
         if not khem[:2]:  #or khem[0:2]
             return False
 
@@ -27,7 +27,7 @@ def is_valid(khem):
 
         return True
 
-    # Check if all characters are alphanumericEnsures
+    # Check if all characters are alphanumeric by Ensuring
     #  no spaces, punctuation, or special characters
 
         if not khem.isalnum():
