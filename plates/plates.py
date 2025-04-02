@@ -19,7 +19,7 @@ def is_valid(khem):
             if khem[i].isdigit():
                 if khem[i] == 0:
                     return False
-                if not khem[i].isdidgit():
+                if not khem[i].isdigit():
                     return False
                 break
 
