@@ -1,8 +1,8 @@
 def main():
 
-     = input("input")
+    user_input = input("Plate: ")
 
-    if is_valid(plate):
+    if is_valid(user_input):
         print("Valid")
     else:
         print("Invalid")
