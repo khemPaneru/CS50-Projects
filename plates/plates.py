@@ -21,7 +21,7 @@ def is_valid(khem):
         if not khem.isalnum():
             return False
 
-         # Check if numbers are at the end and do not start with '0'
+# Check if numbers are at the end and do not start with '0'
         for i in range(len(khem)):
             if khem[i].isdigit():
                 if khem[i] == "0":
@@ -30,7 +30,5 @@ def is_valid(khem):
                                                  #  position i  till to the end of the string.
                     return False
                 break
-
         return True
-
 main()
