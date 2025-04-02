@@ -23,7 +23,7 @@ def is_valid(khem):
 
         for i in range(len(khem)):
             if khem[i].isdigit():
-                if khem[i] == 0:
+                if khem[i] == "0":
                     return False
                 if not khem[i].isdigit():
                     return False
