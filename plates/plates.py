@@ -11,7 +11,8 @@ else:
 def is_valid(khem)
 if not (2< lens(khem) >= 6):
     return false
- if not khem[:2]   #or khem[0:2]
+
+if not khem[:2]   #or khem[0:2]
     return false
 
 for i in range(lens(khem)):
@@ -20,10 +21,17 @@ for i in range(lens(khem)):
             return false
         if not khem[i].isdidgits():
             return false
-    break
+        break
 
-         # Check if all characters are alphanumeric
-    if not s.isalnum():  # Ensures no spaces, punctuation, or special characters
-        return False
+   return True
+
+  # Check if all characters are alphanumericEnsures
+#  no spaces, punctuation, or special characters
+
+if not khem.isalnum():
+    return false
+
+
+
 
 main()
