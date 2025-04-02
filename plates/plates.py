@@ -13,8 +13,8 @@ def is_valid(khem):
         if not (2< len(khem) >= 6):
             return False
 
-
-        if not khem[:2]:  #or khem[0:2]
+# # Check if first two characters are letters
+        if not khem[:2].isalpha()  #or khem[0:2]
             return False
 
         for i in range(len(khem)):
