@@ -14,6 +14,9 @@ if not (2< lens(khem) >= 6):
  if not khem[:2]   #or khem[0:2]
     return false
 
-if not khem[0]
+for i in range(lens(khem)):
+   if khem[0].isdigits():
+        if not khem[0]:
+            return false
 
 main()
