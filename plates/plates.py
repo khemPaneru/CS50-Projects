@@ -9,9 +9,11 @@ def main():
         print("Invalid")
 
 def is_valid(khem):
+         # Check length constraint (between 2 and 6 characters)
         if not (2< len(khem) >= 6):
             return False
 
+        
         if not khem[:2]:  #or khem[0:2]
             return False
 
