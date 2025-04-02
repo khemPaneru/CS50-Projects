@@ -24,16 +24,13 @@ def is_valid(khem):
          # Check if numbers are at the end and do not start with '0'
         for i in range(len(khem)):
             if khem[i].isdigit():
-                if khem[i] == "0":  # First number cannot be '0'
+                if khem[i] == "0":
                     return False
-                # Ensure all characters after the first number are digits
-                if not khem[i:].isdigit():
+                if not khem[i:].isdigit():   # khem[i:] means take all characters starting from the
+                                                 #  position i  till to the end of the string.
                     return False
-                break  # Stop checking after the first digit is found
+                break
 
         return True
-
-
-
 
 main()
