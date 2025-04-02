@@ -1,12 +1,12 @@
 def main():
 
-
     plate = input("input")
 
     if is_valid(plate):
         print("Valid")
     else:
         print("Invalid")
+
 
 def is_valid(khem):
          # Check length constraint (between 2 and 6 characters)
@@ -27,14 +27,8 @@ def is_valid(khem):
 
         return True
 
-    # Check if all characters are alphanumeric
-    # (comb of a-z,A-z,0-9 ,doesnt includes ! @ # $ % & * or spaces.)
-
-
+    # Check if all characters are alphanumeric or not
         if not khem.isalnum():
             return false
-
-
-
 
 main()
