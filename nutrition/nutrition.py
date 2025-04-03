@@ -1,6 +1,6 @@
 
 
-def  calories_in_calories(s):
+def  calories_in_calories():
 
     fruits = {
         "apple": 130,
@@ -24,3 +24,4 @@ def  calories_in_calories(s):
 fruit = input("Item: ")
 if fruit in fruits:
     print(f"calories: {fruits[fruit]}")
+calories_in_calories()
