@@ -20,7 +20,7 @@ fruits = {
         "plums": 70,
         }
 
-fruit = input("Item: ")
+fruit = input("Item: ").lower()
 if fruit in fruits:
     print(f"calories: {fruits[fruit]}")
 
