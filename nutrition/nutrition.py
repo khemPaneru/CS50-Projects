@@ -2,9 +2,25 @@
 
 def  calories_in_calories(s):
 
-    if Apple == 18:
-        return True
+    fruits = {
+        "apple": 130,
+        "avocado": 50,
+        "banana": 110,
+        "cantaloupe": 50,
+        "grapefruit": 60,
+        "grapes": 90,
+        "honeydew melon": 50,
+        "kiwifruit": 90,
+        "lemon": 15,
+        "lime": 20,
+        "nectarine": 60,
+        "orange": 80,
+        "peach": 60,
+        "pear": 100,
+        "pineapple": 50,
+        "plums": 70,
+        }
 
 user_input = input("Item: ")
-khem = calories_in_calories(user_input)
-print(khem)
+if fruit in fruits:
+    print(f"calories: {fruit[fruits]}")
