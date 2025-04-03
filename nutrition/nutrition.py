@@ -21,6 +21,6 @@ def  calories_in_calories(s):
         "plums": 70,
         }
 
-user_input = input("Item: ")
+fruit = input("Item: ")
 if fruit in fruits:
-    print(f"calories: {fruit[fruits]}")
+    print(f"calories: {fruits[fruit]}")
