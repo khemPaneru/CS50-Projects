@@ -2,12 +2,12 @@
 
 
 fruits = {
-        "apple": 130,
-        "avocado": 50,
-        "banana": 110,
-        "cantaloupe": 50,
-        "grapefruit": 60,
-        "grapes": 90,
+        "Apple": 130,
+        "Avocado": 50,
+        "Banana": 110,
+        "Cantaloupe": 50,
+        "Grapefruit": 60,
+        "Grapes": 90,
         "honeydew melon": 50,
         "kiwifruit": 90,
         "lemon": 15,
