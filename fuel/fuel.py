@@ -16,10 +16,10 @@ def main():
 
             break
         except ValueError:
-            print("part can't be greater than whole" )
+            print("parts can't be greater than whole" )
 
         except ZeroDivisionError:
-            print("deno cann't be zero")
+            print("Total can't be zero")
 
     percentage = (x / y) * 100
 
