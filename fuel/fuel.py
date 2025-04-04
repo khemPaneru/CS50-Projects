@@ -10,17 +10,16 @@ def main():
             y = int(y)
 
             if x > y:
-                print("Error: Num can't be greater than deno")
-                continue
+                 raise ValueError
             if y == 0:
-                print("Error: Deno can't be 0.")
+               ZeroDivisionError
                 continue
             break
     except ValueError:
-        print("Invalid input. Please enter numbers in x/y format")
+        pass
 
     except ZeroDivisionError:
-        print("Invalid input: Y cannot be 0")
+       pass
 
     percentage = (x / y) * 100
 
