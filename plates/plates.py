@@ -8,10 +8,10 @@ def main():
         print("Invalid")
 
 
-def is_valid(khem):
+def is_valid(plate):
 # Check length constraint (between 2 and 6 characters)
-    if not (2 <= len(plate) <= 6):
-        return False
+        if not (2 <= len(plate) <= 6):
+            return False
 
 ## Check if first two characters are letters
         if not plate[:2].isalpha():  #or khem[0:2]
