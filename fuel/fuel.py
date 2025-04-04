@@ -12,14 +12,14 @@ def main():
             if x > y:
                  raise ValueError
             if y == 0:
-               ZeroDivisionError
-                continue
+               raise ZeroDivisionError
+
             break
     except ValueError:
-        pass
+        print("Num can't be )
 
     except ZeroDivisionError:
-       pass
+        print("deno cann't be zero")
 
     percentage = (x / y) * 100
 
