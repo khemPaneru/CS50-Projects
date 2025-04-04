@@ -10,16 +10,16 @@ def main():
             y = int(y)
 
             if x > y:
-                 raise ValueError
+                raise ValueError
             if y == 0:
                raise ZeroDivisionError
 
             break
-    except ValueError:
-        print("Num can't be )
+        except ValueError:
+            print("Num can't be" )
 
-    except ZeroDivisionError:
-        print("deno cann't be zero")
+        except ZeroDivisionError:
+            print("deno cann't be zero")
 
     percentage = (x / y) * 100
 
