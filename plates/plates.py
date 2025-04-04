@@ -26,7 +26,7 @@ def is_valid(khem):
             if plate[i].isdigit():
                 if plate[i] == "0":
                     return False
-                if not plate[i:].isdigit():   # khem[i:] means take all characters starting from the
+                if not plate[i:].isdigit():   # plate[i:] means take all characters starting from the
                                                  #  position i  till to the end of the string.
                     return False
                 break
