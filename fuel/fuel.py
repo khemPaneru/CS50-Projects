@@ -16,7 +16,7 @@ def main():
 
             break
         except ValueError:
-            print("Num can't be" )
+            print("X can't be gr" )
 
         except ZeroDivisionError:
             print("deno cann't be zero")
