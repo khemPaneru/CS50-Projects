@@ -24,7 +24,9 @@ def main():
         "Watermelon": 80
             }
 
-    fruit = input("Item: ")
+    fruit = input("Item: ").lower(
+        
+    )
     if fruit in fruits:
         print(f"Calories: {fruits[fruit]}")
 
