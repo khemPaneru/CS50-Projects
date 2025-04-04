@@ -13,11 +13,14 @@ def main():
                 print("Error: Num can't be greater than deno")
                 continue
             if y == 0:
-                print("Error: Denominator can't be 0.")
+                print("Error: Deno can't be 0.")
                 continue
             break
-        except (ValueError, ZeroDivisionError):
-            print("Invalid input. Please enter a valid fraction in the form x/y.")
+    except ValueError:
+        print("Invalid input. Please enter numbers in x/y format")
+
+    except ZeroDivisionError:
+        print("Invalid input: Y cannot be 0")
 
     percentage = (x / y) * 100
 
