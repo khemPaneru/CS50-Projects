@@ -2,7 +2,7 @@
 
 def main():
     fruits = {
-        "Apple": 130,
+        "apple": 130,
         "Avocado": 50,
         "Banana": 110,
         "Cantaloupe": 50,
