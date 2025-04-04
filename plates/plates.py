@@ -10,23 +10,23 @@ def main():
 
 def is_valid(khem):
 # Check length constraint (between 2 and 6 characters)
-        if not (2 <= len(khem) <= 6):
+        if not (2 <= len(plate) <= 6):
             return False
 
 ## Check if first two characters are letters
-        if not khem[:2].isalpha():  #or khem[0:2]
+        if not plate[:2].isalpha():  #or khem[0:2]
             return False
 
 # Check if all characters are alphanumeric or not
-        if not khem.isalnum():
+        if not plate.isalnum():
             return False
 
 # Check if numbers are at the end and do not start with '0'
-        for i in range(len(khem)):
-            if khem[i].isdigit():
-                if khem[i] == "0":
+        for i in range(len(plate)):
+            if plate[i].isdigit():
+                if plate[i] == "0":
                     return False
-                if not khem[i:].isdigit():   # khem[i:] means take all characters starting from the
+                if not plate[i:].isdigit():   # khem[i:] means take all characters starting from the
                                                  #  position i  till to the end of the string.
                     return False
                 break
