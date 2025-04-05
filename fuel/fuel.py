@@ -12,10 +12,10 @@ def main():
                raise ZeroDivisionError
             break
         except ValueError:
-            print("parts can't be greater than whole" )
+            print("Fractional parts can't be greater than whole" ) #num
 
         except ZeroDivisionError:
-            print("Total can't be zero")
+            print("Deno(whole) can't be zero")
     percentage = (x / y) * 100
     if percentage <= 1:
         print("E")
