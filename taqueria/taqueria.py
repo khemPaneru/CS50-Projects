@@ -1,7 +1,7 @@
 
 
 try:
-    item = input()
+
     d = {
     "Baja Taco": 4.25,
     "Burrito": 7.50,
@@ -12,7 +12,8 @@ try:
     "Super Quesadilla": 9.50,
     "Taco": 3.00,
     "Tortilla Salad": 8.00
-}
+    }
+    user_input = input("Item: ")
     if key in d:
 
 except EOFError:
