@@ -1,8 +1,5 @@
 
-
-try:
-
-    d = {
+d = {
     "Baja Taco": 4.25,
     "Burrito": 7.50,
     "Bowl": 8.50,
@@ -13,7 +10,13 @@ try:
     "Taco": 3.00,
     "Tortilla Salad": 8.00
     }
-    user_input = input("Item: ")
-    if key in d:
+ total = 0:
+
+try:
+    while true:
+        user_input = input("Item: ")
+        if key in d:
+           
+
 
 except EOFError:
