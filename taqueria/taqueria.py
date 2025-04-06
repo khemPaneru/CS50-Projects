@@ -16,7 +16,8 @@ try:
     while true:
         user_input = input("Item: ")
         if key in d:
-           
+           total +=d[key]
+
 
 
 except EOFError:
