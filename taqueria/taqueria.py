@@ -14,10 +14,10 @@ d = {
 
 try:
     while true:
-        user_input = input("Item: ")
+        key = input("Item: ")
         if key in d:
            total +=d[key]
-           print(f:"{total.2f}")
+           print(f:"${total.2f}")
 except EOFError:
    print("\nThanks u for placing an order with us !)
 
