@@ -14,7 +14,7 @@ d = {
 
 try:
     while true:
-        key = input("Item: ")
+        key = input("Item: ").strip().title()
         if key in d:
            total +=d[key]
            print(f:"${total.2f}")
@@ -23,4 +23,3 @@ except EOFError:
 
 
 
-except EOFError:
