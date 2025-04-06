@@ -17,6 +17,9 @@ try:
         user_input = input("Item: ")
         if key in d:
            total +=d[key]
+           print(f:"{total.2f}")
+except EOFError:
+   print("\nThanks u for placing an order with us !)
 
 
 
