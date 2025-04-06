@@ -10,16 +10,16 @@ d = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
     }
- total = 0:
+total = 0
 
 try:
-    while true:
+    while True:
         key = input("Item: ").strip().title()
         if key in d:
            total +=d[key]
            print(f:"${total.2f}")
 except EOFError:
-   print("\nThanks u for placing an order with us !)
+   print("\nThanks u for placing an order with us !")
 
 
 
