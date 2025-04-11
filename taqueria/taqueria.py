@@ -17,7 +17,7 @@ try:
         key = input("Item: ").strip().title()
         if key in d:
            total +=d[key]
-           print(f"${total:.2f}")
+           print(f"Total:${total:.2f}")
 except EOFError:
    print("\nThanks u for placing an order with us !")
 
