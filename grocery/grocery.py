@@ -19,7 +19,6 @@ def main():
     for item in sorted_items:
         print(f"{grocery_list[item]} {item.upper()}")
         print()
-        print()
-
 if __name__ == "__main__":
     main()
+
