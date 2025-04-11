@@ -13,11 +13,11 @@ def main():
         except EOFError:
             break
 
-    # sorted() helps to Sort dictionary keys alphabetically
+    # sorted() = to Sort dictionary keys alphabetically
     sorted_items = sorted(grocery_list.keys())
 
     for item in sorted_items:
         print(f"{grocery_list[item]} {item.upper()}")
-
+        
 if __name__ == "__main__":
     main()
