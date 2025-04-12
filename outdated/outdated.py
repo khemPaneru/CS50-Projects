@@ -22,7 +22,6 @@ def main():
                 parts = date.split("/")
             if len(parts) == 3:
                 month, day, year = parts
-
                 if month.isdigit() and day.isdigit() and year.isdigit():
                     month, day, year = int(month), int(day), int(year)
 
