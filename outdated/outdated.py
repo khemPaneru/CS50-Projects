@@ -28,7 +28,7 @@ def main():
                     if 1 <= month <= 12 and 1 <= day <= 31:
                         print(f"{year:04}-{month:02}-{day:02}")
                 elif "," in date:
-                   parts = date.split(" ")
+                    parts = date.split(" ")
                     if len(parts) == 3 and "," in parts[1]:
                         month = parts[0]
                         day = parts[1].replace(",", "")
