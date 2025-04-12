@@ -36,8 +36,8 @@ def main():
                         day = parts[1]
                         year = parts[2]
 
-                        if month in months_name and day.isdigit() and year.isdigit():
-                            month = months_name.index(month)
+                        if month_str in months_name and day.isdigit() and year.isdigit():
+                            month = months_name.index(month_str)
                             month +=1
                             day , year = int(day), int(year)
 
