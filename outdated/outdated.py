@@ -30,7 +30,7 @@ def main():
                             break
  # Format: Month Day, Year
             elif "," in date:
-                    date = date.replace(",", "")  # remove comma
+                    date = date.replace(",", "")  
                     parts = date.split()
                     if len(parts) == 3:
                         month_name, day, year = parts
@@ -41,6 +41,7 @@ def main():
                             if 1 <= day <= 31:
                                 print(f"{year:04}-{month:02}-{day:02}")
                                 break
+
         except EOFError:
                 break
 if __name__ == "__main__":
