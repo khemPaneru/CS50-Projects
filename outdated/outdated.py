@@ -20,14 +20,14 @@ def main():
      # Format: MM/DD/YYYY
             if "/" in date:
                 parts = date.split("/")
-            if len(parts) == 3:
-                month, day, year = parts
-                if month.isdigit() and day.isdigit() and year.isdigit():
-                    month, day, year = int(month), int(day), int(year)
+                if len(parts) == 3:
+                    month, day, year = parts
+                    if month.isdigit() and day.isdigit() and year.isdigit():
+                        month, day, year = int(month), int(day), int(year)
 
-                    if 1 <= month <= 12 and 1 <= day <= 31:
-                        print(f"{year:04}-{month:02}-{day:02}")
-                        break
+                        if 1 <= month <= 12 and 1 <= day <= 31:
+                            print(f"{year:04}-{month:02}-{day:02}")
+                            break
  # Format: Month Day, Year
                 elif "," in date:
                     parts = date.replace(",", "").split(" ")
