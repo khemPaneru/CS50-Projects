@@ -27,7 +27,7 @@ def main():
 
                     if 1 <= month <= 12 and 1 <= day <= 31:
                         print(f"{year:04}-{month:02}-{day:02}")
-                        
+
                 elif "," in date:
                     parts = date.split(" ")
                     if len(parts) == 3 and "," in parts[1]:
@@ -36,7 +36,8 @@ def main():
                         year = parts[2]
 
                         if month in months_name and days.isdigits() and years.isdigit():
-                            month = months_name.index(month) + 1
+                            month = months_name.index(month)
+                            month +=1
                             day , year = int(day), int(year)
 
                             if 1 <= day <= 31:
