@@ -38,7 +38,7 @@ def main():
                             day , year = int(day), int(year)
 
                             if 1 <= day <= 31:
-                                print(f{"year:04}-{month:02}-{day:02}")
+                                print(f"{year:04}-{month:02}-{day:02}")
                                       break
             except EOFError:
                 break
