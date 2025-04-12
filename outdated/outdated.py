@@ -35,7 +35,7 @@ def main():
                         day = parts[1].replace(",", "")
                         year = parts[2]
 
-                        if month in months_name and days.isdigits() and years.isdigit():
+                        if month in months_name and days.isdigits() and years.isdigits():
                             month = months_name.index(month)
                             month +=1
                             day , year = int(day), int(year)
