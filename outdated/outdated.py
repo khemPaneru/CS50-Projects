@@ -30,7 +30,9 @@ def main():
                 elif "," in date:
                    parts = date.split(" ")
                     if len(parts) == 3 and "," in parts[1]:
-                        month, day, year = parts
+                        month = parts[0]
+                        day = parts[1].replace(",", "")
+                        year = parts[2]
 
                         if month in months_name and days.isdigits() and years.isdigit():
                             month = months_name.index(month) + 1
