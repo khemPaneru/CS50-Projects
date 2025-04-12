@@ -22,7 +22,7 @@ def main():
             if len(parts) == 3:
                 month, day, year = parts
 
-                if month.isdigits() and day.isdigits() and year.isdigits():
+                if month.isdigit() and day.isdigit() and year.isdigit():
                     month, day, year = int(month), int(day), int(year)
 
                     if 1 <= month <= 12 and 1 <= day <= 31:
@@ -35,7 +35,7 @@ def main():
                         day = parts[1].replace(",", "")
                         year = parts[2]
 
-                        if month in months_name and days.isdigits() and years.isdigits():
+                        if month in months_name and days.isdigit() and years.isdigit():
                             month = months_name.index(month)
                             month +=1
                             day , year = int(day), int(year)
