@@ -29,17 +29,17 @@ def main():
                             print(f"{year:04}-{month:02}-{day:02}")
                             break
  # Format: Month Day, Year
-            elif "," in date:
-            # ✨ Remove the comma before splitting
+           elif "," in date:
+                # Remove comma and split into parts
                 date = date.replace(",", "")
                 parts = date.split()
                 if len(parts) == 3:
-                    month_str, day, year = parts
-                    if month_str in months_name and day.isdigit() and year.isdigit():
-                        month = months_name.index(month_str) + 1
+                    month_name, day, year = parts
+                    if month_name in months_name and day.isdigit() and year.isdigit():
+                        month = months_name.index(month_name) + 1
                         day = int(day)
                         year = int(year)
-                        if 1 <= month <= 12 and 1 <= day <= 31:
+                        if 1 <= day <= 31:
                             print(f"{year:04}-{month:02}-{day:02}")
                             break
         except EOFError:
