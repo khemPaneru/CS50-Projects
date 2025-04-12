@@ -36,9 +36,9 @@ def main():
                         day = parts[1]
                         year = parts[2]
 
-                        if month_str in months_name and day.isdigit() and year.isdigit():
-                            month = months_name.index(month_str)
-                            month +=1
+                        if month in months_name and day.isdigit() and year.isdigit():
+                            months = months_name.index(month)
+                            months +=1
                             day , year = int(day), int(year)
 
                             if 1 <= day <= 31:
