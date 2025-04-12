@@ -32,7 +32,7 @@ def main():
                     if len(parts) == 3 and "," in parts[1]:
                         month, day, year = parts
 
-                        if months in months_name and days.isdigits() and years.isdigit():
+                        if month in months_name and days.isdigits() and years.isdigit():
                             month = months_name.index(month) + 1
                             day , year = int(day), int(year)
 
@@ -41,6 +41,6 @@ def main():
                                       break
             except EOFError:
                 break
-if __name__ = "__main__":
+if __name__ == "__main__":
     main()
 
