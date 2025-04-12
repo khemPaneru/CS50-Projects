@@ -30,18 +30,15 @@ def main():
                             break
  # Format: Month Day, Year
                 elif "," in date:
-                    parts = date.replace(",", "").split(" ")
-                    if len(parts) == 3 and "," in parts[1]:
-                        month = parts[0]
-                        day = parts[1]
-                        year = parts[2]
+                    parts = date.replace(",", "").split()
+                    if len(parts) == 3:
+                        month_str, day, year = parts
+                        if month_str in months_name and day.isdigit() and year.isdigit():
+                            month = months_name.index(month_str) + 1
+                            day = int(day)
+                            year = int(year)
 
-                        if month in months_name and day.isdigit() and year.isdigit():
-                            month = months_name.index(month)
-                            month +=1
-                            day , year = int(day), int(year)
-
-                            if 1 <= day <= 31:
+                            if 1 <= month <= 12 and 1 <= day <= 31:
                                 print(f"{year:04}-{month:02}-{day:02}")
                                 break
         except EOFError:
