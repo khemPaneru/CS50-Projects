@@ -16,7 +16,7 @@ def main():
           ]
     while True:
         try:
-            date= input("Date").strip()
+            date= input("Date: ").strip()
      # Format: MM/DD/YYYY
             if "/" in date:
                 parts = date.split("/")
