@@ -30,10 +30,10 @@ def main():
                         break
  # Format: Month Day, Year
                 elif "," in date:
-                    parts = date.split(" ")
+                    parts = date..replace(",", "")split(" ")
                     if len(parts) == 3 and "," in parts[1]:
                         month = parts[0]
-                        day = parts[1].replace(",", "")
+                        day = parts[1]
                         year = parts[2]
 
                         if month in months_name and day.isdigit() and year.isdigit():
