@@ -2,9 +2,9 @@ import sys
 import random
 from pyfiglet import Figlet
 
-fig = figlet()
-fonts_available = figlet.getfonts()
-if len(sys.argv) = 1:
+fig = Figlet()
+fonts_available = fig.getfonts()
+if len(sys.argv) == 1:
 font = random.choice(fonts_available)
 elif len(sys.argv) ==3 and (sys.argv[1] == "-f" or sys.arv[1] == "__font"):
 
