@@ -16,6 +16,6 @@ else:
 sys.exit("exit")
 fif.setFont(font=font)
 text = input("Input: ")
-print(fig.RenderText(text))
+print(fig.renderText(text))
 
 
