@@ -2,5 +2,6 @@ import requests
 import sys
 
 try:
- user_input = sys.argv(input())
+ if user_input == sys.argv(input())
+ 
 except
