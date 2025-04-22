@@ -16,7 +16,7 @@ headers = {
 
 }
 try:
-    response = resquests.get(url, headers=headers)
+    response = requests.get(url, headers=headers)
     response.raise_for_status()
     data = response.json()
     price = float(data["data"]["priceUsd"])
