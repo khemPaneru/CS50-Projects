@@ -1,10 +1,8 @@
 import requests
 import sys
 
+if len(sys.argv) !=2:
+    sys.exit(""Missing command-line argument"")
+
 try:
-    sys.argv[2]
-
-
-except
-    sys.exit
-
+    bitcoin = input()
