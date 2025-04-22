@@ -9,5 +9,11 @@ try:
 
 except ValueError:
     sys.exit("Command-line argument is not a number")
-    
-url = 0944621b45ce907b4bd9521557a03170ba66a48b1f8a1a39c080d4f545f73728
+
+url = "https://rest.coincap.io/v3/assets/bitcoin"
+headers = {
+    "Authorization": "Bearer 0944621b45ce907b4bd9521557a03170ba66a48b1f8a1a39c080d4f545f73728 "
+
+}
+try:
+    response = 
