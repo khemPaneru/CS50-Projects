@@ -23,3 +23,5 @@ try:
 
 except requests.RequestException:
     sys.exit("Error fetching data from CoinCap")
+cost = bitcoin * price
+print(f"${cost:,.4f}")
