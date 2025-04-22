@@ -6,4 +6,5 @@ try:
 
 
 except
+    sys.exit
 
