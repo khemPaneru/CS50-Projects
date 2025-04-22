@@ -2,7 +2,7 @@ import requests
 import sys
 
 if len(sys.argv) !=2:
-    sys.exit(""Missing command-line argument"")
+    sys.exit("Missing command-line argument")
 
 try:
     bitcoin = float(sys.argv[1])
