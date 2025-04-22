@@ -16,4 +16,10 @@ headers = {
 
 }
 try:
-    response = 
+    response = resquests.get(url, headers=headers)
+    response.raise_for_status()
+    data = response.json()
+    price = float(data["data"]["priceUsd"])
+
+except requests.RequestException:
+    sys.exit("Error fetching data from CoinCap")
