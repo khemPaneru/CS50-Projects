@@ -12,7 +12,7 @@ except ValueError:
 
 url = "https://rest.coincap.io/v3/assets/bitcoin"
 headers = {
-    "Authorization": "Bearer 0944621b45ce907b4bd9521557a03170ba66a48b1f8a1a39c080d4f545f73728 "
+    "Authorization": "Bearer 0944621b45ce907b4bd9521557a03170ba66a48b1f8a1a39c080d4f545f73728"
 
 }
 try:
