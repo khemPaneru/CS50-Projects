@@ -14,7 +14,7 @@ def is_valid(plate):
             return False
 
 ## Check if first two characters are letters
-        if not plate[:2].isalpha():  #or khem[0:2]
+        if not plate[:2].isalpha():  #or plate[0:2]
             return False
 
 # Check if all characters are alphanumeric or not
