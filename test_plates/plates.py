@@ -33,5 +33,6 @@ def is_valid(plate):
                     return False
                 break
         return True
-if __name__ == "__main_":
+if __name__ == "__main__":
+
     main()
