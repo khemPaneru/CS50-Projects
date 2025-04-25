@@ -31,5 +31,4 @@ def is_valid(plate):
                     return False
                 break
         return True
-
 main()
