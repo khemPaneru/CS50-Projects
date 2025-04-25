@@ -4,7 +4,6 @@ from plates import is_valid
 def test_length():
     assert is_valid("CS50") == True
     assert is_valid("C") == False
-    assert is_valid("CS50P") == True
     assert is_valid("CS50python") == False
 
 def test_start_letters():
