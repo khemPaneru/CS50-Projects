@@ -1,8 +1,8 @@
 
 def main():
     while True:
-user_input = input("X/Y")
-convert =
+        try:
+           user = input("Fraction: ")
 
 
 def convert(fraction):
