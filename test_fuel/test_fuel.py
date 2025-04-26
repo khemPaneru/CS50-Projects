@@ -1,11 +1,15 @@
 
 def main():
+    while True:
 user_input = input("X/Y")
 convert =
 
 
 def convert(fraction):
-X,y = 
+    try:
+        x,y = fraction.split("/")
+        x = int(x)
+        y = int(y)
 
 
 def gauge(percentage):
