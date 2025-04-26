@@ -1,10 +1,11 @@
 
 def main():
+user_input = input("X/Y")
 
 
 
 def convert(fraction):
-    
+
 
 
 def gauge(percentage):
