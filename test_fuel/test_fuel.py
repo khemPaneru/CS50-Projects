@@ -18,7 +18,7 @@ def convert(fraction):
         if y == 0:
             raise ZeroDivisionError
         if x > y:
-            rasie ValueError
+            raise ValueError
         calculated_percentage = round((X / y) * 100)
             return calculated_percentage
 
