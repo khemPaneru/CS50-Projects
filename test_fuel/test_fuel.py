@@ -2,7 +2,9 @@
 def main():
     while True:
         try:
-           user = input("Fraction: ")
+           user_input = input("Fraction: ")
+           percentage = convert(user_input)
+           print
 
 
 def convert(fraction):
@@ -10,6 +12,11 @@ def convert(fraction):
         x,y = fraction.split("/")
         x = int(x)
         y = int(y)
+        if y == 0:
+            raise ZeroDivisionError
+        if x > y:
+            rasie ValueError
+            
 
 
 def gauge(percentage):
