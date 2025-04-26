@@ -21,17 +21,17 @@ def convert(fraction):
             raise ZeroDivisionError
         if x > y:
             raise ValueError
-        calculated_percentage = round((X / y) * 100)
-            return calculated_percentage
+        calculated_percentage = round((x / y) * 100)
+        return calculated_percentage
 
-    except(ValueError, ZeroDivisionError)
+    except(ValueError, ZeroDivisionError):
         raise
 
 
 def gauge(percentage):
     if percentage <= 1:
         return "E"
-    elif percentage > = 99:
+    elif percentage >= 99:
         return "F"
     else:
         return f"{percentage}%"
