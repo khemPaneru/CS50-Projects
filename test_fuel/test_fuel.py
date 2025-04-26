@@ -24,5 +24,5 @@ def test_convert_value_error():
     with pytest.raises(ValueError):
         convert("5/4")
      with pytest.raises(ValueError):
-        convert("5/4")
+        convert("cat/dog")
 
