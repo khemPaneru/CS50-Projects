@@ -1,7 +1,7 @@
 
 def main():
 user_input = input("X/Y")
-
+convert = 
 
 
 def convert(fraction):
