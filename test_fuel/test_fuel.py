@@ -3,8 +3,8 @@ def main():
     while True:
         try:
            user_input = input("Fraction: ")
-           percentage = convert(user_input)
-           print(gauge(percentage))
+           Total_percentage = convert(user_input)
+           print(gauge(Total_percentage))
 
 
 def convert(fraction):
