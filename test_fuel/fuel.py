@@ -1,29 +1,42 @@
 
 #copy one
+
 def main():
     while True:
         try:
-            user_input = input("Fraction: ")
-            x, y = user_input.split('/')
-            x = int(x)
-            y = int(y)
+           user_fraction  = input("Fraction: ")
+           fuel_percentage  = convert(user_fraction)
+           print(gauge(fuel_percentage))
+           break
+        except(ValueError, ZeroDivisionError):
+            pass
 
-            if x > y:
-                raise ValueError
-            if y == 0:
-               raise ZeroDivisionError
-            break
-        except ValueError:
-            print("Fractional parts can't be greater than whole" ) #num
 
-        except ZeroDivisionError:
-            print("Deno(whole) can't be zero")
-    percentage = (x / y) * 100
+def convert(fraction):
+    try:
+        x,y = fraction.split("/")
+        x = int(x)
+        y = int(y)
+        if y == 0:
+            raise ZeroDivisionError
+        if x > y:
+            raise ValueError
+        calculated_percentage = round((X / y) * 100)
+            return calculated_percentage
+
+    except(ValueError, ZeroDivisionError)
+        raise
+
+
+def gauge(percentage):
     if percentage <= 1:
-        print("E")
-    elif percentage >= 99:
-        print("F")
+        return "E"
+    elif percentage > = 99:
+        return "F"
     else:
-        print(f"{round(percentage)}%")
-main()
+        return f"{percentage}%"
 
+
+
+if __name__ == "__main__":
+    main()
