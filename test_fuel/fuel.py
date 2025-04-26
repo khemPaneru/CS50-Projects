@@ -25,7 +25,7 @@ def convert(fraction):
         return calculated_percentage
 
     except(ValueError, ZeroDivisionError):
-        raise
+        raises
 
 
 def gauge(percentage):
