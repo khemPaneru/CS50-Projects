@@ -2,9 +2,9 @@
 def main():
     while True:
         try:
-           user_input = input("Fraction: ")
-           Total_percentage = convert(user_input)
-           print(gauge(Total_percentage))
+           user_fraction  = input("Fraction: ")
+           fuel_percentage  = convert(user_fraction)
+           print(gauge(fuel_percentage))
            break
         except(ValueError, ZeroDivisionError):
             pass
