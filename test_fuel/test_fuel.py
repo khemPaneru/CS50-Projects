@@ -5,6 +5,9 @@ def main():
            user_input = input("Fraction: ")
            Total_percentage = convert(user_input)
            print(gauge(Total_percentage))
+           break
+        except(ValueError, ZeroDivisionError):
+            pass
 
 
 def convert(fraction):
