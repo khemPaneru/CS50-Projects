@@ -12,5 +12,10 @@ if not filename endwith(".csv"):
         sys.exit("Not a CSV file")
 
 try:
-      with open(filename) as file:
-            reader = csv.reader(file)
+      with open(filename) as pizza_file:
+            reader = csv.reader(pizza_file)
+            table = list(reader)
+            print(tabulate(table[1:], headers=table[0],tablefmt="grid"))
+
+except FileNotFoundError:
+      sys.exit("File not exist)
