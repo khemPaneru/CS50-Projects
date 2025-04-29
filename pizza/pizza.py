@@ -3,7 +3,7 @@
 import sys
 import csv
 
-if len(sys.argv) =! 2
+if len(sys.argv) =! 2:
     sys.exit("Too few command-line arguments")
 
 filename = sys.argv[1]
@@ -18,4 +18,4 @@ try:
             print(tabulate(table[1:], headers=table[0],tablefmt="grid"))
 
 except FileNotFoundError:
-      sys.exit("File not exist)
+      sys.exit("File not exist")
