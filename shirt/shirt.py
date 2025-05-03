@@ -17,8 +17,10 @@ def main():
 
     if input_ext not in valid_exts or output_ext not in valid_exts:
         sys.exit("Invalid output")
+
     if input_ext != output_ext:
         sys.exit("Input and output have different extensions")
+        
     if not os.path.isfile(input_file):
         sys.exit("Input does not exist")
 
