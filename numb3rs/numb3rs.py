@@ -16,8 +16,8 @@ def validate(ip):
             if not 0 <= int(octet) <= 255:
                 return False
 
-         return True
+        return True
     except ValueError:
         return False
-if __name__ == "__main__"
+if __name__ == "__main__":
     main()
