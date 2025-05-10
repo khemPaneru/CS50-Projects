@@ -10,3 +10,6 @@ def test_valid_input():
 def test_invalid_input():
     with pytest.raises(ValueError):
      convert("12:60 AM to 5:60 PM")
+
+      with pytest.raises(ValueError):
+        convert("9 AM - 5 PM")
