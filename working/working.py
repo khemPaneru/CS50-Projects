@@ -8,7 +8,7 @@ def main():
 
 
 def convert(s):
-    pattern = r"^(\d{1,2})(?::(\d{2}))? (AM|PM) to (\d{1,2})(?::(\d{2}))? (AM|PM)$
+    pattern = r"^(\d{1,2})(?::(\d{2}))? (AM|PM) to (\d{1,2})(?::(\d{2}))? (AM|PM)$"
     match = re.match(pattern, s)
     if not match:
         raise ValueError("Invalid input format")
