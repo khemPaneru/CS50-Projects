@@ -13,3 +13,10 @@ def test_invalid_input():
 
       with pytest.raises(ValueError):
         convert("9 AM - 5 PM")
+
+        with pytest.raise(ValueError):
+            convert("09:00 AM - 17:00 PM")
+            
+def test_edge_cases():
+    assert convert("12:00 AM to 12:00 PM") == "00:00 to 12:00"
+    assert convert("12:00 PM to 12:00 AM") == "12:00 to 00:00"
