@@ -27,8 +27,13 @@ end_24 = to_24_hour(h2,m2, am_pm2)
 
 
 def to_24_hour(hour, minute, period):
-if period == "AM"
-    
+    if period == "AM"
+        if hour == 12:
+            hour = 0
+    elif period == "PM'
+        if hour != 12:
+            hour +=12
+    return f"{hour:02}:{minute:02}"
 
 
 
