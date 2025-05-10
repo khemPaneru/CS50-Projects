@@ -38,7 +38,7 @@ def convert(s):
 
 
 def to_24_hour(hour, minute, period):
-    """Converts a 12-hour time to a 24-hour time."""
+    #Converts a 12-hour time to a 24-hour time.
     if period == "AM":
         if hour == 12:  # Midnight case
             hour = 0
