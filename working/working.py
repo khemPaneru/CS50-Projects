@@ -22,7 +22,8 @@ def convert(s):
     h2, m2 = int(h2), int(m2)
 
     if not (0<= m1  < 60) or not (0 <= m2 < 60) or not (1 <= h1 <= 12) or not (1 <= h2 <= 12):
-
+        raise ValueError("Invalid time")
+    
     start_24 = to_24_hour(h1, m1, am_pm1)
     end_24 = to_24_hour(h2,m2, am_pm2)
 
