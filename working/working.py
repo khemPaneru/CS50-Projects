@@ -23,17 +23,17 @@ def convert(s):
 
     if not (0<= m1  < 60) or not (0 <= m2 < 60) or not (1 <= h1 <= 12) or not (1 <= h2 <= 12):
         raise ValueError("Invalid time")
-    
+
     start_24 = to_24_hour(h1, m1, am_pm1)
     end_24 = to_24_hour(h2,m2, am_pm2)
 
     return f"{start_24} to {end_24}"
 
 def to_24_hour(hour, minute, period):
-    if period == "AM"
+    if period == "AM":
         if hour == 12:
             hour = 0
-    elif period == "PM"
+    elif period == "PM":
         if hour != 12:
             hour +=12
     return f"{hour:02}:{minute:02}"
