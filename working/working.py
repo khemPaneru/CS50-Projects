@@ -20,6 +20,18 @@ m2 = m2 if m2 else "00"
 h1, m1 = int(h1), int(m1)
 h2, m2 = int(h2), int(m2)
 
-if not (0<= m1 )
+if not (0<= m1  < 60) or not (0 <= m2 < 60) or not (1 <= h1 <= 12) or not (1 <= h2 <= 12):
+
+start_24 = to_24_hour(h1, m1, am_pm1)
+end_24 = to_24_hour(h2,m2, am_pm2)
+
+
+def to_24_hour(hour, minute, period):
+if period == "AM"
+    
+
+
+
+
 if __name__ == "__main__":
     main()
