@@ -1,11 +1,11 @@
 import re
- def main():
+def main():
     print(count(input("Text: ")))
 
 def count(s):
     pattern = r'\bum\b'
 
-    output = re.findall(pattern, s, re.INGORECASE)
+    output = re.findall(pattern, s, re.IGNORECASE)
     return len(output)
 
 if __name__ == "__main__":
