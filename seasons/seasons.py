@@ -13,7 +13,7 @@ def main():
 
 
     minutes = calculate_minutes(birth_date)
-    words = convert_to_words(number)
+    words = convert_to_words(minutes)
     print(f"{words} minutes")
 
 
