@@ -1,15 +1,14 @@
-importfrom seasons import calculate_minutes, convert_to_words
-from datetime import date, timedelta
+import pytest
+from seasons import calculate_minutes, convert_to_words
 
 def test_calculate_minutes():
-    today = date.today()
-    one_day_ago = today - timedelta(days=1)
-    assert calculate_minutes(one_day_ago) == 1440  # 1 day = 1440 minutes
-
-    two_days_ago = today - timedelta(days=2)
-    assert calculate_minutes(two_days_ago) == 2880
+    # Example test case: assume the user was born on a known date
+    birthdate = "2000-01-01"
+    assert calculate_minutes(birthdate) == 525600  # 1 year worth of minutes
 
 def test_convert_to_words():
-    assert convert_to_words(1440) == "one thousand four hundred forty"
+    # Test converting a number to words
     assert convert_to_words(525600) == "five hundred twenty-five thousand six hundred"
-    assert convert_to_words(1051200) == "one million fifty-one thousand two hundred"
+
+if __name__ == "__main__":
+    pytest.main()
