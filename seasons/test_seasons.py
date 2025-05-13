@@ -1,22 +1,15 @@
-import pytest
-from datetime import date
-from seasons import calculate_minutes, convert_to_words
+importfrom seasons import calculate_minutes, convert_to_words
+from datetime import date, timedelta
 
 def test_calculate_minutes():
-    # Example test case: assume the user was born on a known date
-    birthdate_str = "2000-01-01"
-    birth_date = parse_date(birthdate_str)  # Parsing the birthdate string to a date object
-    today = date.today()  # Using today's date
+    today = date.today()
+    one_day_ago = today - timedelta(days=1)
+    assert calculate_minutes(one_day_ago) == 1440  # 1 day = 1440 minutes
 
-    # Calculating expected minutes for one year
-    expected_minutes = round((today - birth_date).days * 24 * 60)
-
-    # Run the function with the correct arguments
-    assert calculate_minutes(birth_date, today) == expected_minutes  # Test should pass now
+    two_days_ago = today - timedelta(days=2)
+    assert calculate_minutes(two_days_ago) == 2880
 
 def test_convert_to_words():
-    # Test converting a number to words
+    assert convert_to_words(1440) == "one thousand four hundred forty"
     assert convert_to_words(525600) == "five hundred twenty-five thousand six hundred"
-
-if __name__ == "__main__":
-    pytest.main()
+    assert convert_to_words(1051200) == "one million fifty-one thousand two hundred"
