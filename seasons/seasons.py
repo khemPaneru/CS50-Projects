@@ -1,18 +1,18 @@
-
 from datetime import date
 import inflect
 import sys
 
 def main():
-    birth_str = input("Date of Birth(YYYY-MM-DD: "))
+    birth_str = input("Date of Birth(YYYY-MM-DD): ")
 
     try:
         birth_date = parse_date(birth_str)
     except ValueError:
         sys.exit("Invalid date")
 
-
-    minutes = calculate_minutes(birth_date)
+    # Use actual today in normal run
+    today = date.today()
+    minutes = calculate_minutes(birth_date, today)
     words = convert_to_words(minutes)
     print(f"{words} minutes")
 
@@ -25,8 +25,8 @@ def parse_date(date_str):
         raise ValueError("Invalid date format")
 
 
-def calculate_minutes(birth_date):
-    today = date.today()
+
+def calculate_minutes(birth_date, today):
     delta = today - birth_date
     return round(delta.days * 24 * 60)
 
