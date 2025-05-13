@@ -1,5 +1,5 @@
 
-from datetime import data
+from datetime import date
 import inflect
 import sys
 
@@ -7,14 +7,14 @@ def main():
     birth_str = input("Date of Birth(YYYY-MM-DD: "))
 
     try:
-        birth_date = parse_date(birth_str):
+        birth_date = parse_date(birth_str)
     except ValueError:
         sys.exit("Invalid date")
 
 
-minutes = calculate_minutes(birth_date)
-words = convert_to_words(number)
-print(f"{words} minutes")
+    minutes = calculate_minutes(birth_date)
+    words = convert_to_words(number)
+    print(f"{words} minutes")
 
 
 def parse_date(date_str):
