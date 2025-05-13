@@ -2,34 +2,38 @@ from datetime import date
 import inflect
 import sys
 
-def calculate_minutes(birthdate):
-    # Calculate the difference between today's date and the birthdate
-    today = date.today()  # Get today's date directly inside the function
-    birthdate = date(*map(int, birthdate.split('-')))  # Convert input string to date
-    delta = today - birthdate
-    minutes = delta.days * 24 * 60  # Convert days to minutes
-    return minutes
-
-def convert_to_words(minutes):
-    # Convert minutes to words using inflect
-    p = inflect.engine()
-    return p.number_to_words(minutes).lower()  # Ensure the result is lowercase
-
 def main():
+    birth_str = input("Date of Birth(YYYY-MM-DD): ")
+
     try:
-        # Prompt the user for their birthdate in YYYY-MM-DD format
-        birthdate = input("Enter your birthdate (YYYY-MM-DD): ")
-
-        # Validate and process the birthdate
-        minutes = calculate_minutes(birthdate)
-
-        # Convert the minutes to words and print the result
-        minutes_in_words = convert_to_words(minutes)
-        print(f"{minutes_in_words} minutes")
-
+        birth_date = parse_date(birth_str)
     except ValueError:
-        print("Invalid date format. Please enter the date in YYYY-MM-DD format.")
-        sys.exit(1)
+        sys.exit("Invalid date")
+
+    # Use actual today in normal run
+    today = date.today()
+    minutes = calculate_minutes(birth_date, today)
+    words = convert_to_words(minutes)
+    print(f"{words} minutes")
+
+
+def parse_date(date_str):
+    try:
+        year, month, day = map(int, date_str.split('-'))
+        return date(year, month, day)
+    except:
+        raise ValueError("Invalid date format")
+
+
+
+def calculate_minutes(birth_date, today):
+    delta = today - birth_date
+    return round(delta.days * 24 * 60)
+
+
+def convert_to_words(number):
+    p = inflect.engine()
+    return p.number_to_words(number, andword="").capitalize()
 
 if __name__ == "__main__":
     main()
