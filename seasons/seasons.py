@@ -1,6 +1,5 @@
 from datetime import date
 import inflect
-import sys
 
 def main():
     birth_str = input("Date of Birth(YYYY-MM-DD): ")
@@ -8,7 +7,8 @@ def main():
     try:
         birth_date = parse_date(birth_str)
     except ValueError:
-        sys.exit("Invalid date")
+        print("Invalid date")  # Print the error message
+        return  # End the function without raising an exit error
 
     # Use actual today in normal run
     today = date.today()
@@ -21,9 +21,8 @@ def parse_date(date_str):
     try:
         year, month, day = map(int, date_str.split('-'))
         return date(year, month, day)
-    except:
+    except ValueError:
         raise ValueError("Invalid date format")
-
 
 
 def calculate_minutes(birth_date, today):
