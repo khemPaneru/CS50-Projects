@@ -13,4 +13,7 @@ def main():
 
 def parse_date(date_str):
     try:
-        
+        year, month, day = map(int, date_str.split('-'))
+        return date(year, month, day)
+    except:
+        raise ValueError("Invalid date format")
