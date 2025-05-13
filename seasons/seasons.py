@@ -18,3 +18,8 @@ def parse_date(date_str):
         return date(year, month, day)
     except:
         raise ValueError("Invalid date format")
+
+def calculate_minutes(birth_date):
+    today = date.today()
+    delta = today - birth_date
+    return round(delta.days * 24 * 60)
