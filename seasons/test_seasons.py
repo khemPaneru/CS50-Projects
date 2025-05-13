@@ -1,5 +1,4 @@
-import pytest
-from seasons import calculate_minutes, convert_to_words
+import pytestfrom seasons import calculate_minutes, convert_to_words
 from datetime import date, timedelta
 
 def test_calculate_minutes():
