@@ -23,3 +23,7 @@ def calculate_minutes(birth_date):
     today = date.today()
     delta = today - birth_date
     return round(delta.days * 24 * 60)
+
+def convert_to_words(number):
+    p = inflect.engine()
+    return p.number
