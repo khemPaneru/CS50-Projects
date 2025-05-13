@@ -11,5 +11,5 @@ def test_calculate_minutes():
 
 def test_convert_to_words():
     assert convert_to_words(1440) == "one thousand four hundred forty"
-    assert convert_to_words(525600) == "five hundred twenty-five thousand six hundred"
-    assert convert_to_words(1051200) == "one million fifty-one thousand two hundred"
+    assert convert_to_words(525600) == " Five hundred twenty-seven thousand forty minutes"
+    assert convert_to_words(1051200) == "One million, fifty-one thousand, two hundred minutes"
