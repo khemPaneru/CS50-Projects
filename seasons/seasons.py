@@ -4,11 +4,10 @@ import inflect
 def main():
     birth_str = input("Date of Birth(YYYY-MM-DD): ")
 
-    try:
-        birth_date = parse_date(birth_str)
-    except ValueError:
-        print("Invalid date")  # Print the error message
-        return  # End the function without raising an exit error
+    # Attempt to parse the date without printing anything or exiting on error
+    birth_date = parse_date(birth_str)
+    if not birth_date:  # If the date couldn't be parsed, return early without error message
+        return
 
     # Use actual today in normal run
     today = date.today()
@@ -22,7 +21,7 @@ def parse_date(date_str):
         year, month, day = map(int, date_str.split('-'))
         return date(year, month, day)
     except ValueError:
-        raise ValueError("Invalid date format")
+        return None  # Instead of raising an exception, return None if invalid format
 
 
 def calculate_minutes(birth_date, today):
