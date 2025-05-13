@@ -12,6 +12,11 @@ def main():
         sys.exit("Invalid date")
 
 
+minutes = calculate_minutes(birth_date)
+words = convert_to_words(number)
+print(f"{words} minutes")
+
+
 def parse_date(date_str):
     try:
         year, month, day = map(int, date_str.split('-'))
@@ -19,10 +24,12 @@ def parse_date(date_str):
     except:
         raise ValueError("Invalid date format")
 
+
 def calculate_minutes(birth_date):
     today = date.today()
     delta = today - birth_date
     return round(delta.days * 24 * 60)
+
 
 def convert_to_words(number):
     p = inflect.engine()
