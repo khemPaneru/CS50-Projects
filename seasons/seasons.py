@@ -26,4 +26,7 @@ def calculate_minutes(birth_date):
 
 def convert_to_words(number):
     p = inflect.engine()
-    return p.number
+    return p.number_to_words(number, andword="").capitalize()
+
+if __name__ == "__main__":
+    main()
