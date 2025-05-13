@@ -3,37 +3,32 @@ import inflect
 import sys
 
 def main():
-    birth_str = input("Date of Birth(YYYY-MM-DD): ")
-
-    try:
-        birth_date = parse_date(birth_str)
-    except ValueError:
-        sys.exit("Invalid date")
-
-    # Use actual today in normal run
-    today = date.today()
-    minutes = calculate_minutes(birth_date, today)
-    words = convert_to_words(minutes)
-    print(f"{words} minutes")
-
-
-def parse_date(date_str):
-    try:
-        year, month, day = map(int, date_str.split('-'))
-        return date(year, month, day)
-    except:
-        raise ValueError("Invalid date format")
-
-
-# ✅ Now accepts 'today' as parameter
-def calculate_minutes(birth_date, today):
-    delta = today - birth_date
-    return round(delta.days * 24 * 60)
-
-
-def convert_to_words(number):
+    # Initialize inflect engine to convert numbers to words
     p = inflect.engine()
-    return p.number_to_words(number, andword="").capitalize()
+
+    # Prompt user for their birthdate
+    birthdate = input("Enter your birthdate (YYYY-MM-DD): ")
+
+    try:
+        # Parse the input into a date object
+        birth_year, birth_month, birth_day = map(int, birthdate.split('-'))
+        birth_date = date(birth_year, birth_month, birth_day)
+    except ValueError:
+        # If the input format is incorrect, exit the program
+        print("Invalid date format.")
+        sys.exit(1)
+
+    # Get today's date
+    today = date.today()
+
+    # Calculate the difference between today and the birthdate
+    delta = today - birth_date
+
+    # Calculate minutes lived
+    minutes = delta.days * 24 * 60  # Convert days to minutes
+
+    # Convert the minutes to words and print
+    print(p.number_to_words(minutes, andword=", "))
 
 if __name__ == "__main__":
     main()
